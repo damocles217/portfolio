@@ -39,7 +39,7 @@ const useContactForm = (): hookContactForm => {
 		e.preventDefault();
 		setForm({ ...form });
 
-		const url = process.env.URL_BACKEND || "http://192.168.1.67:6000/mail";
+		const url = process.env.URL_BACKEND || "http://192.168.1.67:8000/mail";
 
 		const data = await fetch(url, {
 			method: "POST",

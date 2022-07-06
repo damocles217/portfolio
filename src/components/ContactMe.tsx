@@ -41,7 +41,6 @@ const ContactMe: NextComponentType = () => {
 					<PhoneInput
 						onChange={(e) => {
 							setPhone(e);
-							console.log(phone);
 						}}
 						defaultCountry={"US"}
 						value={phone}
