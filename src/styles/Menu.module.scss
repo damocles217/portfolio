@@ -1,0 +1,99 @@
+$final_font: rgba(81, 52, 128, 0.8);
+
+#fill {
+	height: 7vh;
+	background-color: rgb(47, 47, 47);
+}
+
+.menu {
+	width: 100%;
+	position: fixed;
+	height: 7vh;
+	display: flex;
+	background: $final_font;
+
+	align-items: center;
+	justify-content: right;
+	z-index: 1;
+
+	span {
+		position: relative;
+		color: white;
+		font-size: 1.2em;
+	}
+
+	span:hover {
+		animation: linksHover 1s;
+	}
+}
+
+.blockMenu {
+	display: none;
+}
+
+.dropMenu {
+	width: 50%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+@keyframes linksHover {
+	0% {
+		color: white;
+		font-size: 1.2em;
+	}
+	50% {
+		font-size: 1.4em;
+		color: black;
+	}
+	100% {
+		color: white;
+		font-size: 1.2em;
+	}
+}
+@media screen and (min-width: 981px) {
+	.dropMenu {
+		display: flex !important;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.menu {
+		justify-content: left;
+	}
+	.blockMenu {
+		cursor: pointer;
+		margin-left: 5%;
+		font-size: 1.8em;
+		display: block;
+	}
+	.dropMenu {
+		display: none;
+		position: fixed;
+		flex-direction: column;
+		justify-content: right;
+		align-items: flex-start;
+		span {
+			width: 80%;
+			cursor: pointer;
+			margin-top: 8%;
+			margin-left: 7%;
+			position: relative;
+			color: white;
+			font-size: 1.2em;
+			height: 5vh;
+		}
+
+		left: 0;
+		top: 7vh;
+		width: 50%;
+		height: 100vh;
+		background-color: black;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.dropMenu {
+		width: 100%;
+	}
+}

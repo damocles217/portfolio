@@ -1,0 +1,28 @@
+.work {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	* {
+		color: rgb(53, 53, 53);
+	}
+}
+
+#title {
+	font-size: 1.6em;
+}
+
+.list {
+	li {
+		list-style: none;
+		min-height: 8vh;
+		h3 {
+			font-size: 1.4em;
+		}
+		h4 {
+			color: rgb(200, 182, 48);
+			font-size: 1.2em;
+		}
+	}
+}

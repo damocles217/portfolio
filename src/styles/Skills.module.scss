@@ -1,0 +1,18 @@
+.skill {
+	animation: skillAnimation 4s forwards;
+	animation-play-state: paused;
+	color: red;
+	background-color: red;
+	width: 20%;
+	height: 10vh;
+}
+
+@keyframes skillAnimation {
+	from {
+		display: none;
+	}
+	to {
+		display: block;
+		background-color: blue;
+	}
+}

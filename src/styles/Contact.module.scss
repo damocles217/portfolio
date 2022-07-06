@@ -1,0 +1,116 @@
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	#contactme {
+		margin-top: 5%;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		margin-top: 5%;
+		width: 80%;
+		h3 {
+			color: white;
+			margin-bottom: 10%;
+		}
+		* {
+			color: black;
+		}
+		input {
+			height: 5vh;
+		}
+		button {
+			margin-top: 2%;
+			width: 30%;
+			height: 4vh;
+			border: 2px solid white;
+			background-color: rgb(50, 49, 49);
+			color: white;
+		}
+	}
+}
+
+.icons {
+	width: 100%;
+	height: 5vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	span {
+		font-size: 2em;
+	}
+}
+
+@media screen and (min-width: 740px) {
+	.icons {
+		width: 100%;
+		height: 5vh;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin-top: 4%;
+		margin-bottom: 0;
+		span {
+			font-size: 2em;
+		}
+	}
+
+	.contact {
+		#contactme {
+			margin-top: 5%;
+		}
+		form {
+			width: 80%;
+			h3 {
+				color: white;
+				margin-bottom: 5%;
+			}
+			* {
+				color: black;
+			}
+			input {
+				height: 4vh;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1150px) {
+	.icons {
+		width: 100%;
+		height: 5vh;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin-top: 3%;
+		margin-bottom: 0;
+		span {
+			font-size: 2em;
+		}
+	}
+
+	.contact {
+		#contactme {
+			margin-top: 3%;
+		}
+		form {
+			width: 60%;
+			margin-top: 2%;
+			h3 {
+				color: white;
+				margin-bottom: 5%;
+			}
+			* {
+				color: black;
+			}
+			input {
+				height: 4vh;
+			}
+		}
+	}
+}

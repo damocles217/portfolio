@@ -1,0 +1,190 @@
+@mixin sharedImage {
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+
+	span {
+		width: 90% !important;
+		height: auto !important;
+		min-width: auto !important;
+		min-height: auto !important;
+		max-height: none !important;
+		max-width: none !important;
+		img {
+			width: 80%;
+			height: auto;
+		}
+	}
+	text-align: center;
+}
+
+@mixin shared {
+	display: flex;
+	justify-content: right;
+	align-items: flex-end;
+	width: 100%;
+	height: 100%;
+	font-weight: 650;
+	border-radius: 20px;
+	span {
+		font-size: 5em;
+	}
+	text-align: center;
+}
+
+@mixin hideImg {
+	span {
+		display: none !important;
+		span,
+		img {
+			display: none !important;
+		}
+	}
+}
+
+@mixin hoveritFunc {
+	.hoverit {
+		display: block;
+		animation: showerHover 2s forwards;
+	}
+}
+
+@keyframes showerHover {
+	from {
+		height: 0;
+		background-color: transparent;
+		color: transparent;
+		opacity: 0;
+	}
+	to {
+		height: 100%;
+		color: white;
+		background-color: rgba(44, 43, 43, 0.818);
+		opacity: 1;
+	}
+}
+
+@keyframes loaderFunc {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.javascript {
+	@include shared();
+	span {
+		color: black;
+	}
+	background-color: yellow;
+}
+
+.typescript {
+	@include shared();
+	color: white;
+	background-color: rgb(69, 152, 235);
+}
+
+.react {
+	@include sharedImage();
+	background-color: rgb(49, 183, 255);
+}
+
+.mongo {
+	@include shared();
+	@include sharedImage();
+	span {
+		font-size: 3em;
+	}
+	background-color: rgb(100, 87, 27);
+}
+
+.sql {
+	@include sharedImage();
+	@include shared();
+	background-color: rgb(247, 146, 46);
+}
+.graphql {
+	@include sharedImage();
+	@include shared();
+	background-color: rgb(247, 46, 180);
+}
+
+.golang {
+	@include sharedImage();
+	@include shared();
+	background-color: rgb(32, 143, 247);
+}
+
+.python {
+	@include sharedImage();
+	@include shared();
+	span {
+		font-size: 4em;
+		color: rgb(59, 155, 234);
+	}
+	background-color: rgb(253, 253, 16);
+}
+
+.bash {
+	@include sharedImage();
+	@include shared();
+	background-color: rgb(58, 58, 58);
+}
+.next {
+	@include sharedImage();
+	@include shared();
+	span {
+		color: rgb(58, 58, 58);
+	}
+	background-color: rgb(175, 31, 31);
+}
+.nestjs {
+	@include sharedImage();
+	@include shared();
+	span {
+		font-size: 4em;
+		color: rgb(252, 252, 252);
+	}
+	background-color: rgb(213, 67, 67);
+}
+
+.express {
+	@include sharedImage();
+	@include shared();
+	span {
+		font-size: 3.8em;
+		color: rgb(252, 252, 252);
+	}
+	background-color: rgb(87, 213, 67);
+}
+
+.hoverit {
+	width: 100%;
+	height: 100%;
+	display: none;
+	border-radius: 20px;
+	h3 {
+		text-align: center;
+		margin-top: 4%;
+		font-size: 1.2em !important;
+		font-weight: 500;
+	}
+	p {
+		margin-top: 5%;
+		font-weight: 400;
+	}
+}
+
+.loader {
+	animation: loaderFunc 3s forwards;
+}
+
+.loader:hover {
+	@include hideImg();
+	@include hoveritFunc();
+}
