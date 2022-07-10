@@ -28,6 +28,8 @@ const ContactMe: NextComponentType = () => {
 					<h3>Contact form:</h3>
 					<input
 						name="email"
+						type="email"
+						required={true}
 						placeholder="Email"
 						onChange={handleForm}
 						value={form.email}
@@ -35,6 +37,8 @@ const ContactMe: NextComponentType = () => {
 					<input
 						name="name"
 						placeholder="Name"
+						required={true}
+						type="text"
 						onChange={handleForm}
 						value={form.name}
 					/>

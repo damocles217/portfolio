@@ -63,4 +63,21 @@ export const data = [
 		description: "User Rest API. This was my first Nestjs example",
 		url: "https://github.com/damocles217/exampleUserNestjs",
 	},
+	{
+		reponame: "portfolio_backend",
+		language: "Javascript",
+		framework: "Express",
+		imgUrl: "",
+		description: "Porfolio backend for send emails to me from you",
+		url: "https://github.com/damocles217/portfolio_backend",
+	},
+	{
+		reponame: "portfolio",
+		language: "Typescript",
+		framework: "Nextjs",
+		imgUrl: "",
+		description:
+			"Porfolio, code is here because I want to you see what I can do.",
+		url: "https://github.com/damocles217/portfolio",
+	},
 ];
