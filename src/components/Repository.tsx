@@ -4,7 +4,7 @@ import Image from "next/image";
 interface Props {
 	value: any;
 }
-const Repository: NextComponentType<Props> = ({ value }) => {
+const Repository = ({ value }: Props) => {
 	return (
 		<div className={style.repository}>
 			{value.imgUrl && <Image src={value.imgUrl} alt={"Github image"} />}
