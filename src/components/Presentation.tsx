@@ -12,12 +12,12 @@ const Presentation: NextComponentType = () => {
 				<h3>Hi I&apos;m Aksel Vazquez</h3>
 				<h2>I&apos;m a Fullstack developer</h2>
 				<p>
-					Although I have 4 mounths of experience working as freelancer,
+					Although I have 4 months of experience working as freelancer,
 					I&apos;ve developed from 12 years old. From this age, I&apos; found
-					lot of wonderfull things about the programming, and I have a good
+					lot of wonderful things about the programming, and I have a good
 					skills with javascript/typescript, python, go, css, and bash.
 					Somethings about me are I know how to work in teams and want to learn
-					somethings new alltime.
+					somethings new all time.
 				</p>
 				<br />
 				<p></p>

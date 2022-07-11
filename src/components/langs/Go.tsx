@@ -10,7 +10,7 @@ const Golang: NextComponentType = () => {
 					<h3>Golang</h3>
 					<p>
 						I really enjoy developing in go, I use it for rest apis (with GIN and MUX frameworks) and commonly
-						with mongodb (for read fastly).
+						with mongodb (for fast reading).
 					</p>
 				</div>
 			</div>

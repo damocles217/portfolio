@@ -10,7 +10,7 @@ const Bash: NextComponentType = () => {
 				<div>
 					<h3>Bash</h3>
 					<p>
-						I know how to automatizate tasks with bash, commonly I use this with git hooks.
+						I know how to automatize tasks with bash, commonly I use this with git hooks.
 					</p>
 				</div>
 			</div>

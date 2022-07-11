@@ -8,7 +8,7 @@ const Graphql: NextComponentType = () => {
 			<div className={style.hoverit}>
 				<div>
 					<h3>Graphql</h3>
-					<p>I use commonly apollo for node environments, I don&apos;t know about graphql in python or go, but if it&apos;s necesary, I&apos;ll learn so</p>
+					<p>I use commonly apollo for node environments, I don&apos;t know about graphql in python or go, but if it&apos;s necessary, I&apos;ll learn so</p>
 				</div>
 			</div>
 		</div>
