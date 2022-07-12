@@ -115,7 +115,7 @@
 	}
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 980px) {
 	.contact {
 		min-height: 90vh;
 		#contactme {
