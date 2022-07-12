@@ -6,26 +6,24 @@ import Golang from "./langs/Go";
 import Graphql from "./langs/Graphql";
 import Javascript from "./langs/Js";
 import Mongodb from "./langs/Mongodb";
-import MySQL from "./langs/MySQL";
+// import MySQL from "./langs/MySQL";
 import Nestjs from "./langs/Nestjs";
-import Next from "./langs/Next";
-import Python from "./langs/Python";
+// import Next from "./langs/Next";
+// import Python from "./langs/Python";
 import React from "./langs/React";
 import Typescript from "./langs/Ts";
 
 const Skills: NextComponentType = () => {
 	return (
-		<div className={style.skills} id="skills">
+		<div className={`${style.skills} ${style.skillsShow}`} id="skills">
+			<h3 id={style.titleSkills}>Skills:</h3>
 			<div className={style.grid}>
 				<Javascript />
 				<Typescript />
 				<React />
-				<Next />
 				<Mongodb />
-				<MySQL />
 				<Graphql />
 				<Golang />
-				<Python />
 				<Bash />
 				<Nestjs />
 				<Express />

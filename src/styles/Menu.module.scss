@@ -35,6 +35,9 @@ $final_font: rgba(81, 52, 128, 0.8);
 	width: 50%;
 	display: flex;
 	justify-content: space-evenly;
+	span {
+		cursor: pointer;
+	}
 }
 
 @keyframes linksHover {
@@ -51,6 +54,23 @@ $final_font: rgba(81, 52, 128, 0.8);
 		font-size: 1.2em;
 	}
 }
+
+@media screen and (orientation: landscape) and (max-width: 980px) {
+	#fill {
+		height: 12vh;
+	}
+	.dropMenu {
+		top: 12vh !important;
+		width: 100% !important;
+		span {
+			margin-top: 4% !important;
+		}
+	}
+	.menu {
+		height: 12vh;
+	}
+}
+
 @media screen and (min-width: 981px) {
 	.dropMenu {
 		display: flex !important;

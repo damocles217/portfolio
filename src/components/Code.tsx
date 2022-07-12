@@ -43,7 +43,7 @@ const Code: NextComponentType = () => {
 
 	return (
 		<div className={`${styleHome.presentation} ${style.repos}`} id="code">
-			<h3>Repositories in which you can see my code:</h3>
+			<h3>Personal projects:</h3>
 			<input
 				onChange={searchFilterHandler}
 				ref={inputRef}

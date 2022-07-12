@@ -114,3 +114,23 @@
 		}
 	}
 }
+
+@media screen and (orientation: landscape) {
+	.contact {
+		min-height: 90vh;
+		#contactme {
+			margin-top: 2%;
+		}
+		form {
+			width: 60%;
+			margin-top: 2%;
+			input {
+				height: 5vh;
+			}
+			button {
+				height: 5vh;
+				width: 20%;
+			}
+		}
+	}
+}

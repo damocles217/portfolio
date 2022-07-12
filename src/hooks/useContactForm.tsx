@@ -13,8 +13,6 @@ interface Form {
 }
 
 type hookContactForm = [
-	number,
-	Dispatch<SetStateAction<number>>,
 	Form,
 	(e: ChangeEvent<HTMLInputElement>) => void,
 	any,
@@ -23,7 +21,6 @@ type hookContactForm = [
 ];
 
 const useContactForm = (): hookContactForm => {
-	const [click, setClick] = useState<number>(0);
 	const [phone, setPhone] = useState();
 	const [form, setForm] = useState<Form>({
 		name: "",
@@ -56,7 +53,7 @@ const useContactForm = (): hookContactForm => {
 		return parsedData;
 	};
 
-	return [click, setClick, form, handleForm, phone, setPhone, sendData];
+	return [form, handleForm, phone, setPhone, sendData];
 };
 
 export default useContactForm;
