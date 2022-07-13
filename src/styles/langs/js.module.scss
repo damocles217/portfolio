@@ -29,7 +29,7 @@
 	font-weight: 650;
 	border-radius: 20px;
 	span {
-		font-size: 5em;
+		font-size: 4em;
 	}
 	text-align: center;
 }
@@ -98,7 +98,7 @@
 	@include shared();
 	@include sharedImage();
 	span {
-		font-size: 3em;
+		font-size: 2.4em;
 	}
 	background-color: rgb(100, 87, 27);
 }
@@ -124,7 +124,7 @@
 	@include sharedImage();
 	@include shared();
 	span {
-		font-size: 4em;
+		font-size: 2em;
 		color: rgb(59, 155, 234);
 	}
 	background-color: rgb(253, 253, 16);
@@ -133,7 +133,10 @@
 .bash {
 	@include sharedImage();
 	@include shared();
-	background-color: rgb(58, 58, 58);
+	span {
+		color: rgb(58, 58, 58);
+	}
+	background-color: white;
 }
 .next {
 	@include sharedImage();
@@ -147,7 +150,7 @@
 	@include sharedImage();
 	@include shared();
 	span {
-		font-size: 4em;
+		font-size: 3em;
 		color: rgb(252, 252, 252);
 	}
 	background-color: rgb(213, 67, 67);
@@ -157,7 +160,7 @@
 	@include sharedImage();
 	@include shared();
 	span {
-		font-size: 3.8em;
+		font-size: 2.5em;
 		color: rgb(252, 252, 252);
 	}
 	background-color: rgb(87, 213, 67);

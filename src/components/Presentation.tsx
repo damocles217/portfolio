@@ -1,4 +1,5 @@
 import { NextComponentType } from "next";
+import Link from "next/link";
 import Image from "next/image";
 import style from "../styles/Home.module.scss";
 import CodeImage from "../assets/code.jpg";
@@ -13,7 +14,9 @@ const Presentation: NextComponentType = () => {
 				<h2>I&apos;m a Fullstack developer</h2>
 				<p>Oriented in backend develop</p>
 				<br />
-				<p></p>
+				<a href="./cv.pdf" download={true}>
+					Download CV
+				</a>
 			</div>
 			<div className={style.imageDescription}>
 				<Image src={CodeImage} alt={"Code example"} />

@@ -21,7 +21,6 @@
 	h3 {
 		position: relative;
 		font-size: 1.8em;
-		background: rgb(49, 49, 49);
 		animation: animatedText 3s forwards;
 	}
 	h2 {
@@ -39,6 +38,18 @@
 		animation: animated3 3s 1s forwards;
 		text-justify: auto;
 	}
+	a {
+		display: flex;
+		align-items: center;
+		border: none;
+		position: relative;
+		color: transparent;
+		font-size: 0.9em;
+		padding: 1%;
+		border-radius: 10px;
+		background-color: transparent;
+		animation: animatedLink 3s 1s forwards;
+	}
 }
 
 .imageDescription {
@@ -51,7 +62,7 @@
 
 	img {
 		z-index: 0;
-		border-radius: 50px;
+		border-radius: 40px;
 		min-width: auto !important;
 		min-height: auto !important;
 		max-width: none !important;
@@ -76,7 +87,7 @@
 }
 
 #titleSkills {
-	margin-left: 5%;
+	align-self: center;
 	font-size: 1.5em;
 }
 
@@ -91,9 +102,9 @@
 
 	justify-content: space-evenly;
 	grid-auto-flow: dense;
-	grid-template-columns: repeat(auto-fill, minmax(min(100%, 10rem), 15rem));
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 10rem), 12rem));
 
-	grid-auto-rows: minmax(10rem, 15rem);
+	grid-auto-rows: minmax(10rem, 12rem);
 	row-gap: 2em;
 	column-gap: 3em;
 }
@@ -135,6 +146,19 @@
 		opacity: 0;
 	}
 	to {
+		opacity: 1;
+	}
+}
+
+@keyframes animatedLink {
+	from {
+		opacity: 0;
+		color: transparent;
+		background-color: transparent;
+	}
+	to {
+		color: white;
+		background-color: rgb(169, 190, 49);
 		opacity: 1;
 	}
 }
@@ -182,16 +206,19 @@
 		p {
 			font-size: 1em;
 		}
+		a {
+			height: 5vh;
+		}
 	}
 }
 
 @media screen and (max-width: 400px) {
 	.imageDescription {
-		height: 40%;
+		height: 50%;
 		width: 100%;
 		img {
 			width: 60% !important;
-			border-radius: 30px;
+			border-radius: 30px !important;
 		}
 	}
 	.presentation {
@@ -211,6 +238,10 @@
 		h2 {
 			font-size: 1.4em;
 		}
+		a {
+			height: 6vh;
+			font-size: 1em;
+		}
 	}
 }
 
@@ -223,8 +254,8 @@
 		width: 100%;
 		height: 50%;
 		img {
-			width: 55% !important;
-			border-radius: 30px;
+			width: 60% !important;
+			border-radius: 30px !important;
 		}
 	}
 
@@ -232,13 +263,17 @@
 		width: 100%;
 		height: 50%;
 		p {
-			font-size: 1em;
-		}
-		h3 {
 			font-size: 1.2em;
 		}
+		h3 {
+			font-size: 1.5em;
+		}
 		h2 {
-			font-size: 1.1em;
+			font-size: 1.4em;
+		}
+		a {
+			font-size: 1em;
+			height: 5vh;
 		}
 	}
 }
