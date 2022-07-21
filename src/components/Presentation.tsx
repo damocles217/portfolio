@@ -14,7 +14,7 @@ const Presentation: NextComponentType = () => {
 				<h2>I&apos;m a Fullstack developer</h2>
 				<p>Oriented in backend develop</p>
 				<br />
-				<a href="./cv.pdf" download={true}>
+				<a href="./CV.pdf" download={true}>
 					Download CV
 				</a>
 			</div>
