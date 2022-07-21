@@ -42,8 +42,12 @@ const useContactForm = (): hookContactForm => {
 
 		const data = await fetch(url, {
 			method: "POST",
+			mode: "cors",
+			credentials: "include",
 			headers: {
 				"Content-Type": "application/json",
+				"Access-Control-Allow-Origin":
+					"https://portfolio-aksel-vazquez.herokuapp.com/",
 			},
 			body: JSON.stringify({ ...form, phone }),
 		});
