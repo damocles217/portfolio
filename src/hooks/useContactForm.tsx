@@ -46,8 +46,6 @@ const useContactForm = (): hookContactForm => {
 			credentials: "include",
 			headers: {
 				"Content-Type": "application/json",
-				"Access-Control-Allow-Origin":
-					"https://portfolio-aksel-vazquez.herokuapp.com/",
 			},
 			body: JSON.stringify({ ...form, phone }),
 		});
