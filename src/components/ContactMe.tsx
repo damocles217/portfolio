@@ -1,5 +1,5 @@
 import { NextComponentType } from "next";
-import PhoneInput from "react-phone-number-input";
+// import PhoneInput from "react-phone-number-input";
 import styleHome from "../styles/Home.module.scss";
 import style from "../styles/Contact.module.scss";
 import useContactForm from "../hooks/useContactForm";
@@ -28,8 +28,8 @@ const ContactMe: NextComponentType = () => {
 						</a>
 					</section>
 				</div>
-				<div className={style.fill}>
-					<form onSubmit={sendData}>
+				{/* <div className={style.fill}> */}
+				{/* <form onSubmit={sendData}>
 						<h3>Contact form:</h3>
 						<input
 							name="email"
@@ -57,7 +57,7 @@ const ContactMe: NextComponentType = () => {
 						/>
 						<button type="submit">Submit</button>
 					</form>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

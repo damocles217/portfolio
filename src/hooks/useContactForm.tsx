@@ -36,9 +36,7 @@ const useContactForm = (): hookContactForm => {
 		e.preventDefault();
 		setForm({ ...form });
 
-		const url =
-			process.env.URL_BACKEND ||
-			"https://portfolio-backend-aksel.herokuapp.com/mail";
+		const url = process.env.URL_BACKEND || "http://192.168.1.67:8000/mail";
 
 		const data = await fetch(url, {
 			method: "POST",
