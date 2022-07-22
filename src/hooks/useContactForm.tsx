@@ -42,7 +42,6 @@ const useContactForm = (): hookContactForm => {
 
 		const data = await fetch(url, {
 			method: "POST",
-			mode: "cors",
 			headers: {
 				"Content-Type": "application/json",
 			},
